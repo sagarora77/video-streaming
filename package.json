@@ -7,7 +7,6 @@
         "node": ">=6.2.0"
     },
     "scripts": {
-        "postinstall": "npm run build",
         "start": "node server.js"
     },
     "author": "daspinola",
