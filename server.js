@@ -10,7 +10,8 @@ app.get('/', function(req, res) {
 })
 
 app.get('/video', function(req, res) {
-    const path = 'assets/sample.mp4'
+    const params = req.params.id;
+    const path = './assets/sample.mp4'
     const stat = fs.statSync(path)
     const fileSize = stat.size
     const range = req.headers.range
@@ -49,6 +50,8 @@ app.get('/video', function(req, res) {
 })
 
 const PORT = process.env.PORT || 3001;
+var base_url = "http://0.0.0.0:" + PORT;
+console.log("base_url is", base_url);
 app.listen(PORT, () => {
     console.log(`Our app is running on port ${ PORT }`);
 });

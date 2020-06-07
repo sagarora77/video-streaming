@@ -1,7 +1,7 @@
 {
-    "name": "video-stream-sample",
+    "name": "video-streaming-sample",
     "version": "1.0.0",
-    "description": "Streaming video example",
+    "description": "Streaming video POC",
     "main": "server.js",
     "engines": {
         "node": ">=6.2.0"
@@ -9,7 +9,7 @@
     "scripts": {
         "start": "node server.js"
     },
-    "author": "daspinola",
+    "author": "Sagar Arora",
     "license": "MIT",
     "dependencies": {
         "express": "^4.15.3",
